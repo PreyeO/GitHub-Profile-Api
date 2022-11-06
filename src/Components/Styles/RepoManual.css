@@ -1,0 +1,108 @@
+.rep-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  align-items: center;
+}
+.rep-card {
+  text-align: center;
+  border: 2px solid #33E5BB;
+  width:65%;
+  word-spacing: 1px;
+  font-size: 20px;
+  color: #dfd3d3;
+  margin-top: 5x;
+  height: 47vh;
+  background: #022e59;
+  align-items: center;
+  
+}
+
+.rep-content{
+  color: white;
+}
+.rep-image{
+  border: 3px solid #022e59 ;
+  text-align: center;
+}
+.rep-card p{
+  text-align: center;
+  font-size: 15px;
+
+}
+
+.rep-image img{
+  max-width: 300px;
+  height: 200px;
+}
+.rep-content h1{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 17px;
+}
+.rep-readme{
+  text-align: center;
+  font-size: 18px;
+}
+
+.rep-tools{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.rep-images, .hide-img{
+  display:none;
+}
+
+.linked{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-left: 200PX;
+}
+.linked a{
+  color: #33E5BB;
+}
+
+@media screen and (min-width: 768px) {
+  .rep-container {
+    padding-top: 70px;
+    
+  }
+  .rep-content h1{
+    font-size: 23px;
+    }
+  .rep-card p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .linked{
+    padding-left: 450PX;
+  }
+  .rep-card{
+    height: 35vh;
+  }
+
+}
+@media screen and (min-width: 1300px) {
+  .rep-container{
+    flex-direction: column;
+    padding-top: 0px;
+    
+  }
+  .rep-card{
+    height: 30vh;
+  }
+
+  .linked{
+    padding-left: 700px;
+  }
+  .rep-content h1{
+  font-size: 25px;
+  }
+}
